@@ -3,5 +3,5 @@
 
 cp /etc/hosts ~/hosts.new
 sed -i 's/127.0.0.1\tlocalhost/127.0.0.2\tlocalhost/g' ~/hosts.new
-echo -e "8.8.8.8\tfacebook.com" >> /etc/hosts
+sed -i '$ a\8.8.8.8 facebook.com' ~/hosts.new
 cp ~/hosts.new /etc/hosts

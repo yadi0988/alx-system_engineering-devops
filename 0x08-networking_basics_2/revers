@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#reverse
+
+sed -i 's/127.0.0.2\tlocalhost/127.0.0.1\tlocalhost/g' ~/hosts.new
+sed -i 's/8.8.8.8 facebook.com//g' ~/hosts.new
+cp ~/hosts.new /etc/hosts
+rm -f ~/hosts.new
