@@ -1,5 +1,7 @@
 # install puppet-line
 
+class { '::python::pip': provider => 'pip3', }
+
 package { 'flask':
   ensure   => present,
   provider => 'pip3',
