@@ -1,6 +1,7 @@
 # install puppet-line
 
-package { 'puppet-list':
-  ensure   => '2.1.0',
-  provider => 'flask',
+package { 'flask':
+  ensure   => present,
+  provider => 'pip3',
+  ensure_version => '2.1.0',
 }
