@@ -1,7 +1,7 @@
 # create the schoo file in /tmp
 
 file { 'school':
-  path    => '/tmp/scjìhool',
+  path    => '/tmp/school',
   owner   => 'www.data',
   group   => 'www.data',
   mode    => '0744',
