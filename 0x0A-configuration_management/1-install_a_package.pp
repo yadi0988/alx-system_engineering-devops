@@ -1,9 +1,6 @@
-# install puppet-line
+# install puppet-lint using Puppet
 
-class { '::python::pip': provider => 'pip3', }
-
-package { 'flask':
-  ensure   => present,
-  provider => 'pip3',
-  ensure_version => '2.1.0',
+package { 'puppet-lint':
+  ensure   => '2.1.0',
+  provider => 'gem',
 }
