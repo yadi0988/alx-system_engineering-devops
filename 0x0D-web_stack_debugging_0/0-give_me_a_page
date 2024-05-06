@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # fixes an apache server in a container
-echo "Hello Holberton" > /var/www/html/index.html
 sudo service apache2 status
+echo "Hello Holberton"
 service apache2 restart
